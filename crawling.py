@@ -63,7 +63,7 @@ def get_user_list(url):
 
 def do_crawl(url):
     url_list = get_user_list(url)
-
+    # print("TEST_1")
     if len(url_list) >=2:
         for url in url_list:
             genre_list = genre_list(url)
@@ -91,3 +91,5 @@ def do_crawl(url):
 
             print(user_id_list, title_list, score_list)
 
+# def print_test():
+#     print("SUCCESS")
